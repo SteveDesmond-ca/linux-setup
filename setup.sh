@@ -22,6 +22,7 @@ apt install -y \
 	code \
 	dotnet-sdk-3.1 \
 	dotnet-sdk-5.0 \
+	dotnet-sdk-6.0 \
 	gnome-keyring \
 	nano \
 	nodejs \
