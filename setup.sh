@@ -32,6 +32,7 @@ sudo apt install -y \
 	nano \
 	nodejs \
 	remmina \
+	zip \
 
 sudo npm i -g npm yarn
 
