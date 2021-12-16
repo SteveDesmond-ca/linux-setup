@@ -25,6 +25,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 
 sudo apt update -y
 sudo apt install -y \
+	bash-completion \
 	code \
 	dotnet-sdk-6.0 \
 	firefox-esr \
