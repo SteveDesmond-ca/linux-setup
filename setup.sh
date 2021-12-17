@@ -30,10 +30,12 @@ sudo apt install -y \
 	dotnet-sdk-6.0 \
 	firefox-esr \
 	gh \
+	git-lfs \
 	gnome-keyring \
 	nano \
 	nodejs \
 	remmina \
+	xserver-xorg-input-synaptics \
 	zip \
 
 sudo npm i -g npm yarn
@@ -45,6 +47,8 @@ sudo chmod a+x /usr/local/bin/docker-compose
 
 sudo apt autoremove -y
 sudo apt autoclean -y
+
+sudo cp synaptics.conf /etc/X11/xorg.conf.d
 
 git config --global user.name "Steve Desmond"
 git config --global user.email "steve@vtsv.ca"
