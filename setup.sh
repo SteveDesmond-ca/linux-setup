@@ -48,7 +48,8 @@ sudo chmod a+x /usr/local/bin/docker-compose
 sudo apt autoremove -y
 sudo apt autoclean -y
 
-sudo cp synaptics.conf /etc/X11/xorg.conf.d
+sudo cp display.conf /etc/X11/xorg.conf.d
+sudo cp touch.conf /etc/X11/xorg.conf.d
 
 git config --global user.name "Steve Desmond"
 git config --global user.email "steve@vtsv.ca"
