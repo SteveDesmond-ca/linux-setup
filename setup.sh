@@ -43,9 +43,14 @@ sudo usermod -aG docker vtsv
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod a+x /usr/local/bin/docker-compose
 
+sudo apt autoremove -y
+sudo apt autoclean -y
+
 git config --global user.name "Steve Desmond"
 git config --global user.email "steve@vtsv.ca"
+
 git config --global core.editor "code --wait"
+git config --global pull.rebase true
 
 git config --global alias.l "log --oneline --decorate --graph"
 git config --global alias.la "l --all"
@@ -53,6 +58,3 @@ git config --global alias.lh "l HEAD^..HEAD"
 git config --global alias.p "pull --prune"
 git config --global alias.ca "commit --amend --no-edit"
 git config --global alias.pf "push --force-with-lease"
-
-sudo apt autoremove -y
-sudo apt autoclean -y
