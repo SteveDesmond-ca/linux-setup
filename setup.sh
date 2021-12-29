@@ -57,7 +57,7 @@ git config --global user.email "steve@vtsv.ca"
 git config --global core.editor "code --wait"
 git config --global pull.rebase true
 
-git config --global alias.l "log --oneline --decorate --graph"
+git config --global alias.l "log --oneline --graph"
 git config --global alias.la "l --all"
 git config --global alias.lh "l HEAD^..HEAD"
 git config --global alias.p "pull --prune"
