@@ -34,6 +34,7 @@ sudo apt install -y \
 	gnome-keyring \
 	nano \
 	nodejs \
+	postgresql \
 	remmina \
 	xserver-xorg-input-synaptics \
 	zip \
