@@ -53,7 +53,11 @@ sudo cp display.conf /etc/X11/xorg.conf.d
 sudo cp touch.conf /etc/X11/xorg.conf.d
 
 git config --global user.name "Steve Desmond"
-git config --global user.email "steve@vtsv.ca"
+git config --global user.email "Steve@ecoAPM.com"
+
+git config --global user.signingkey ADF59DED8F842F1D
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
 
 git config --global core.editor "code --wait"
 git config --global pull.rebase true
