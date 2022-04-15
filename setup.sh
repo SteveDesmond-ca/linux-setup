@@ -59,7 +59,7 @@ git config --global user.signingkey ADF59DED8F842F1D
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 
-git config --global core.editor "code --wait"
+git config --global core.editor "code -rw --disable-extensions"
 git config --global pull.rebase true
 
 git config --global alias.l "log --oneline --graph"
