@@ -54,13 +54,17 @@ sudo cp touch.conf /etc/X11/xorg.conf.d
 
 git config --global user.name "Steve Desmond"
 git config --global user.email "Steve@ecoAPM.com"
+git config --global pull.rebase true
 
 git config --global user.signingkey ADF59DED8F842F1D
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 
 git config --global core.editor "code -rw --disable-extensions"
-git config --global pull.rebase true
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code -rw -d $LOCAL $REMOTE'
+git config --global merge.tool vscode
+git config --global mergetool.vscode.cmd 'code -rw $MERGED'
 
 git config --global alias.l "log --oneline --graph"
 git config --global alias.la "l --all"
